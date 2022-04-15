@@ -3,11 +3,15 @@
         class="d-flex justify-center align-center pa-0 mt-10 mb-10"
         flat
     >
-        <v-card class="pa-3" flat rounded width="90%">
+        <v-card class="pa-3" flat rounded width="80%">
             <v-form
                 ref="form"
                 v-model="valid"
+                class="text-center"
             >
+                <v-form-title class="text-h4 text-center">
+                    Skontaktuj się z nami
+                </v-form-title>
                 <v-text-field
                     v-model="name"
                     :rules="nameRules"
