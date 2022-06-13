@@ -31,9 +31,12 @@
                             </v-app-bar>
                         </v-col>
                     </v-row>
-                    <v-btn class="mt-2" color="warning" rounded width="100%">
-                        <v-icon left>fas fa-plus</v-icon>
-                        Więcej >
+                    <v-btn class="mt-2" color="warning" rounded width="100%"
+                           @click="$router.push(`/rooms/${room.id}`)">
+                        Więcej
+                        <v-icon right>
+                            mdi-chevron-right
+                        </v-icon>
                     </v-btn>
                 </v-col>
             </v-row>
@@ -43,17 +46,47 @@
 
 <script>
 export default {
-    name: "Rooms",
+    name: "RoomsList",
     data: () => ({
         rooms: [
             {
-                title: "Pokój dwuosobowy",
+                id: 1,
+                title: "Pokój dwuosobowy standard",
                 img: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur dolorum,quibusdam eum pariatur, laboriosam quia provident placeat corrupti repellat odio at. Hic commodi .",
                 offers: [
                     {
                         icon: "mdi-bed-double",
                         subtitle: "Łoże małżeńskie",
+                    },
+                    {
+                        icon: "mdi-shower-head",
+                        subtitle: "Prywatna łazienka",
+                    },
+                    {
+                        icon: "mdi-television",
+                        subtitle: "Telewizor",
+                    },
+                    {
+                        icon: "mdi-fridge",
+                        subtitle: "Lodówka w pokoju",
+                    },
+                    {
+                        icon: "mdi-kettle",
+                        subtitle: "Czajnik w pokoju",
+                    },
+
+                ]
+            },
+            {
+                id: 2,
+                title: "Pokój dwuosobowy delux z widokiem na morze",
+                img: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur dolorum,quibusdam eum pariatur, laboriosam quia provident placeat corrupti repellat odio at. Hic commodi .",
+                offers: [
+                    {
+                        icon: "mdi-bed-double",
+                        subtitle: "Łóżko typu King size (160cmx200cm)",
                     },
                     {
                         icon: "mdi-shower-head",
@@ -75,7 +108,8 @@ export default {
                 ]
             },
             {
-                title: "Pokój rodzinny",
+                id: 3,
+                title: "Pokój rodzinny z widokiem na morze",
                 img: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur dolorum,quibusdam eum pariatur, laboriosam quia provident placeat corrupti repellat odio at. Hic commodi .",
                 offers: [
@@ -85,7 +119,7 @@ export default {
                     },
                     {
                         icon: "mdi-bed",
-                        subtitle: "2 łóżka pojedyncze",
+                        subtitle: "Rozkładana sofa",
                     },
                     {
                         icon: "mdi-shower-head",
@@ -106,13 +140,18 @@ export default {
                 ]
             },
             {
-                title: "Pokój deluxe",
+                id: 4,
+                title: "Pokój trzyosobowy standard",
                 img: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur dolorum,quibusdam eum pariatur, laboriosam quia provident placeat corrupti repellat odio at. Hic commodi .",
                 offers: [
                     {
+                        icon: "mdi-bed",
+                        subtitle: "3 łóżka pojedyncze",
+                    },
+                    {
                         icon: "mdi-bed-double",
-                        subtitle: "Łoże małżeńskie",
+                        subtitle: " (Opcja) Łóżko typu King size  + łóżko pojedyncze",
                     },
                     {
                         icon: "mdi-shower-head",
@@ -120,7 +159,7 @@ export default {
                     },
                     {
                         icon: "mdi-television",
-                        subtitle: "Duży telewizor",
+                        subtitle: "Telewizor",
                     },
                     {
                         icon: "mdi-fridge",

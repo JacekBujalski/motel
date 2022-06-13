@@ -58,13 +58,12 @@ export default {
     name: 'AppNavigation',
     data() {
         return {
-            appTitle: 'Meal Prep',
+            
             phone: "700-800-900",
             drawer: false,
             items: [
                 {icon: "mdi-home", title: 'Strona Główna', url: '/'},
                 {icon: "mdi-bed", title: 'Pokoje', url: '/rooms'},
-                {icon: "mdi-near-me", title: 'Okolica', url: '/area'},
                 {icon: "mdi-card-account-phone", title: 'Kontakt', url: '/contact'},
             ]
         };
