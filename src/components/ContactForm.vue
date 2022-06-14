@@ -9,9 +9,9 @@
                 v-model="valid"
                 class="text-center"
             >
-                <v-form-title class="text-h4 text-center">
+                <span class="text-h4 text-center">
                     Skontaktuj się z nami
-                </v-form-title>
+                </span>
                 <v-text-field
                     v-model="name"
                     :rules="nameRules"
