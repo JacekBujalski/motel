@@ -15,15 +15,6 @@
                 v-bind:lazy-src="require('../assets/' + item.lazyName)"
                 v-bind:src="require('../assets/' + item.fileName)"
             >
-                <v-row
-                    align="center"
-                    class="fill-height"
-                    justify="center"
-                >
-                    <div class="text-h2">
-                        {{ item.title }} Slide
-                    </div>
-                </v-row>
             </v-img>
         </v-carousel-item>
     </v-carousel>
@@ -35,9 +26,10 @@ export default {
     data() {
         return {
             items: [
-                {title: 'First', fileName: 'replace1.jpg', lazyName: 'replace1lazy.jpg'},
-                {title: 'Second', fileName: "replace2.jpg", lazyName: 'replace2lazy.jpg'},
-                {title: 'Third', fileName: "replace3.jpg", lazyName: 'replace3lazy.jpg'},
+                {fileName: 'mc1.jpg', lazyName: 'mc1lazy.jpg'},
+                {fileName: "p36.jpg", lazyName: 'p36lazy.jpg'},
+                {fileName: 'mc2.jpg', lazyName: 'mc2lazy.jpg'},
+                {fileName: 'mc3.jpg', lazyName: 'mc3lazy.jpg'},
             ],
         }
     },
