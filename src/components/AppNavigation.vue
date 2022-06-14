@@ -58,8 +58,8 @@ export default {
     name: 'AppNavigation',
     data() {
         return {
-            
-            phone: "700-800-900",
+
+            phone: "793-350-477",
             drawer: false,
             items: [
                 {icon: "mdi-home", title: 'Strona Główna', url: '/'},

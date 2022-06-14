@@ -35,7 +35,7 @@ export default {
     name: "ContactTiles",
     data: () => ({
         cards: [
-            {name: 'Phone', title: '700-800-900', icon: 'mdi-cellphone'},
+            {name: 'Phone', title: '793-350-477', icon: 'mdi-cellphone'},
             {name: 'Address', title: 'Marynarzy 6, 82-120 Krynica Morska', icon: 'mdi-map-marker'},
             {name: 'Email', title: 'amberkrynica@gmail.com', icon: 'mdi-at'},
         ],
