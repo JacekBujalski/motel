@@ -6,6 +6,8 @@ yarn run build
 
 cd dist
 
+echo 'www.amberkrynica.pl' > CNAME
+
 git init
 git add -A
 git commit -m 'deploy'
