@@ -6,7 +6,7 @@ yarn run build
 
 cd dist
 
-echo 'www.amberkrynica.pl' > CNAME
+echo 'jacekbujalski.github.io/motel' > CNAME
 
 git init
 git add -A
